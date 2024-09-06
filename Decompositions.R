@@ -1,5 +1,5 @@
 Decomposition=function(A, b){
-  #======================cholesky=================================
+  #======================cholesky================================#
   if (ncol(A)==nrow(A) && all(A==t(A)) && all(eigen(A)$values>0)){
     print("Cholesky decomposition")
     L=chol(A)
